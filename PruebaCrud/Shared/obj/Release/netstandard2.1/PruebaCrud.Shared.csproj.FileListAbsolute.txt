@@ -1,0 +1,9 @@
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Shared\bin\Release\netstandard2.1\PruebaCrud.Shared.deps.json
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Shared\bin\Release\netstandard2.1\PruebaCrud.Shared.dll
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Shared\bin\Release\netstandard2.1\PruebaCrud.Shared.pdb
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Shared\obj\Release\netstandard2.1\PruebaCrud.Shared.csprojAssemblyReference.cache
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Shared\obj\Release\netstandard2.1\PruebaCrud.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Shared\obj\Release\netstandard2.1\PruebaCrud.Shared.AssemblyInfoInputs.cache
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Shared\obj\Release\netstandard2.1\PruebaCrud.Shared.AssemblyInfo.cs
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Shared\obj\Release\netstandard2.1\PruebaCrud.Shared.dll
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Shared\obj\Release\netstandard2.1\PruebaCrud.Shared.pdb

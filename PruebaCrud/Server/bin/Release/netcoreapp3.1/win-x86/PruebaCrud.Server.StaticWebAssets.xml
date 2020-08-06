@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Client\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Client\bin\Release\netstandard2.1\wwwroot\" />
+</StaticWebAssets>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJTQLSkYMeECqm+nzCnqQyQAAAAACAAAAAAAQZgAAAAEAACAAAADDegF9bfQjBz2Z0BdmaEY1WAM5EJKrl5q+DbLv1PkwCAAAAAAOgAAAAAIAACAAAAA+yR/ZTGTU7xXJruzZwyyTCKKrU9IickFZb0g7VSk9boAAAAD/jgBT3uyVXxwnDUp7wl9Yyce0sllN/K0NaOJ9mh88D5346hIrVD3zRhmumt/GLNCSIfES949udY7ogv3moWoOl4crbAz7qxdTkjG2lp00Rtwvn11Pg52F+ON0jP5oVLeWbLTULKB7YUuOG1ILDGLrskviQgmMKsD2L6oNCv6Y3EAAAACa/KOMf4uWR5MPitp1yWLczU9lxEwVsvRqi1Zwkcrq/sYjDS748i5ZBbreTWaqPrbBSDvwKEkrk/WGwf3K0NQm</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="PruebaCrud.Server.ApplicationDbContext">
+      <Value>
+      </Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

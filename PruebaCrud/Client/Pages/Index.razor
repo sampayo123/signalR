@@ -1,0 +1,37 @@
+﻿@page "/"
+@inject IJSRuntime JS
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<button class="btn btn-success" @onclick="Show"> ver</button>
+
+<button class="btn btn-warning" @onclick="pregunta">Preguntar</button>
+
+<div>
+    la pregunta es: <span id="answerSpan"></span>
+</div>
+@code{
+
+    string askText = string.Empty;
+
+    async Task pregunta()
+    {
+        var response = await JS.InvokeAsync<string>("createAsk", askText);
+        await JS.InvokeVoidAsync("setElementTextById", "answerSpan", response);
+    }
+
+
+    async Task Show()
+    {
+        await JS.InvokeVoidAsync("createAlert");
+        await JS.InvokeVoidAsync("test");
+        await JS.InvokeVoidAsync("tests");
+
+    }
+
+
+}
+
+
+<SurveyPrompt Title="How is Blazor working for you?" />

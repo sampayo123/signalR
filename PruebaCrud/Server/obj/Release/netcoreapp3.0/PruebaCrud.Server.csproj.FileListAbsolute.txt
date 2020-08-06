@@ -1,0 +1,5 @@
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Server\obj\Release\netcoreapp3.0\PruebaCrud.Server.csprojAssemblyReference.cache
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Server\obj\Release\netcoreapp3.0\PruebaCrud.Server.csproj.CoreCompileInputs.cache
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Server\obj\Release\netcoreapp3.0\PruebaCrud.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Server\obj\Release\netcoreapp3.0\PruebaCrud.Server.AssemblyInfoInputs.cache
+C:\Users\Owner\source\repos\PruebaCrud-signalR\PruebaCrud\Server\obj\Release\netcoreapp3.0\PruebaCrud.Server.AssemblyInfo.cs

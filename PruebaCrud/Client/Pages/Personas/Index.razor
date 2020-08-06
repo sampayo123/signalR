@@ -1,0 +1,111 @@
+﻿@page "/indice-personas"
+@inject HttpClient Http
+@inject IJSRuntime JS
+<h3>Personas</h3>
+
+<div>
+    <a class="btn btn-success" href="crear-persona">Nueva Personas</a>
+</div>
+<br />
+@if (personas == null)
+{
+    <text> Cargando...</text>
+}
+else if (personas.Length == 0)
+{
+    <text> No hay personas en la base de datos</text>
+}
+else
+{
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Id</th>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var persona in personas)
+        {
+
+            <tr>
+                <td>
+                    <a class="btn btn-success" href="editar-persona/@persona.id">Editar</a>
+                    <button class="btn btn-danger" @onclick="@(() => BorrarPersona(persona.id))">Eliminar</button>
+                </td>
+                <td>@persona.id</td>
+                <td>@persona.nombre</td>
+            </tr>
+
+        }
+
+    </tbody>
+
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6">
+            Accion:  <ul id="messagesList" >
+            </ul>
+        </div>
+        
+    </div>
+</table>
+
+
+
+
+
+
+}
+
+
+@code {
+
+
+    Persona[] personas { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CargarPersonas();
+    }
+
+    async Task CargarPersonas()
+    {
+        personas = await Http.GetJsonAsync<Persona[]>("personas");
+
+
+              /* personas = new Persona[]
+         {
+              new Persona(){id=1, nombre="Israel"},
+              new Persona(){id=2, nombre="Pedro"}
+         };*/
+    }
+
+
+
+    async Task BorrarPersona(int idPersona)
+    {
+
+        var personaSeleccionada = personas.First(x => x.id == idPersona);
+        string confirmacion = $"Deseas borrar a la persona {personaSeleccionada.nombre }?";
+        if (await JS.InvokeAsync<bool>("confirm", confirmacion))
+        {
+            await Http.DeleteAsync($"personas/{idPersona}");
+            await CargarPersonas();
+
+
+        }
+
+
+
+
+
+
+
+
+
+    }
+
+}
